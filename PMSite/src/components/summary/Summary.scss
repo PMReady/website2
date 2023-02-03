@@ -1,0 +1,109 @@
+.pm__summary {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--color-accent-red);
+    
+}
+
+.pm__summary-feature {
+    display: flex;
+}
+
+.pm__summary-feature .pm__features-container {
+    margin: 0;
+}
+.pm__summary-feature .pm__features-container_feature-text {
+    margin: 0;
+    max-width: 700px;
+    
+}
+
+.pm__summary-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0 2rem;
+
+    h1 {
+        font-family: var(--font-family);
+        font-weight: 800;
+        line-height: 45px;
+        font-size: 32px;
+        max-width: 50%;
+    }
+
+    p {
+        font-family: var(--font-family);
+        font-weight: 500;
+        line-height: 30px;
+        font-size: 20px;
+        max-width: 20%;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+.pm__summary-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+.pm__summary-container .pm__features-container {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+.pm__summary-container .pm__features-container_feature-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .pm__summary-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .pm__summary-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .pm__summary-feature .pm__features-container__feature {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .pm__summary-feature .pm__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .pm__summary-heading  {
+        h1 {
+            font-size: 28px;
+            line-height: 40px;    
+        }
+        p {
+            font-size: 15px;
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .pm__summary-container .pm__features-container {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}
