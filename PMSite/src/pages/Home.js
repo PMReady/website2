@@ -6,43 +6,26 @@ import "./Home.scss"
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 
-// Header for the main home page
+const Description = () => {
+  return(
+    <div>
+      <span>Don't know what you want to do in the future?</span>< br/>
+      <span>Try Product Management</span> 
+    </div>
+  )
+}
 
 
 const Home = () => {
-  // const [isVisible, setIsVisible] = useState(false);
-  // const node = useRef(null);
-  
-  // const callBack = (entries) => {
-  //   const [entry] = entries;
-  //   setIsVisible(entry.isIntersecting);
-  // }
-  // const options = {
-  //   root: null,
-  //   rootMargin: "0px",
-  //   threshold: 1.0
-  // }
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(callBack, options);
-  //     if (node.current) observer.observe(node.current);
-
-  //     return () => {
-  //       if (isVisible) {
-  //         observer.unobserve(node.current);
-  //         observer.disconnect();
-  //       }
-  //     }
-
-  // });
 
   return (
     <>
     <div className="home-container">
       <Navbar />
-      <Header button={true} title="It's time to become a Product Manager" description="Don't know what you want to do in the future? Try Product Management"/>
+      <Header button={true} title="It's time to become a Product Manager" description={<Description/>}/>
       {/* <div ref={node}></div> */}
       <div className="summary-container">
-        <AnimationOnScroll offset={400} duration={0.7} animateIn="square-animation" animateOnce={true}>
+        <AnimationOnScroll offset={600} duration={0.7} animateIn="square-animation" animateOnce={true}>
           <Summary />
         </AnimationOnScroll>
       </div>

@@ -10,6 +10,10 @@ body {
     background: var(--color-bg);
 }
 
+.pm__navbar-menu_container {
+  z-index: 110;
+}
+
 
 a {
     color: unset;

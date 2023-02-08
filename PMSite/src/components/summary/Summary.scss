@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    background: var(--color-accent-red);
+    background: #B7D7F4;
     
 }
 
@@ -13,28 +13,26 @@
     display: flex;
 }
 
-.pm__summary-feature .pm__features-container {
+.pm__summary-feature .pm_summary-container {
     margin: 0;
-}
-.pm__summary-feature .pm__features-container_feature-text {
-    margin: 0;
-    max-width: 700px;
-    
 }
 
 .pm__summary-heading {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 4rem 0 2rem;
-
+    margin-top: 2rem;
+    padding-left: clamp(0%, 20%, 30%);
+    padding-right: clamp(0%, 20%, 30%);
     h1 {
         font-family: var(--font-family);
-        font-weight: 800;
-        line-height: 45px;
-        font-size: 32px;
-        max-width: 90%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        max-width: (30%, 40%, 100%);
+        line-height: 60px;
+        text-align: center;
     }
 
     p {
@@ -49,23 +47,30 @@
 }
 
 .pm__summary-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-    margin-top: 2rem;
-}
-
-.pm__summary-container .pm__features-container {
     flex: 1;
-    margin: 1rem;
-    min-width: 210px;
+    margin-top: 3rem;
     display: unset;
     flex-direction: column;
-}
 
-.pm__summary-container .pm__features-container_feature-text {
-    margin-top: 0.5rem;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    .pm__summary-list {
+        margin-left: clamp(0%, 10%, 80%);
+        margin-right: clamp(0%, 10%, 80%);
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        ul{
+            max-width: 40%;
+        }
+    }
+    
 }
 
 @media screen and (max-width: 850px) {
@@ -82,9 +87,19 @@
 
 @media screen and (max-width: 650px) {
     /* Customizing feature component as per needs */
-    .pm__summary-feature .pm__features-container__feature {
-        flex-direction: column;
+    .pm__summary-container {
+        .pm__summary-list {
+            height: auto;
+            flex-direction: row;
+            ul {
+                max-width: 100%;
+            }
+            li {
+                margin-bottom: 10px;
+            }
+        }
     }
+    
 
     /* Customizing feature component as per needs */
     .pm__summary-feature .pm__features-container_feature-text {
@@ -92,6 +107,7 @@
     }
 
     .pm__summary-heading  {
+        padding: 0;
         h1 {
             font-size: 28px;
             line-height: 40px;    
@@ -105,8 +121,5 @@
 
 @media screen and (max-width: 350px) {
     /* Customizing feature component as per needs */
-    .pm__summary-container .pm__features-container {
-        margin: 1rem 0;
-        min-width: 100%;
-    }
+    
 }
