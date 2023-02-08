@@ -39,10 +39,10 @@ const Home = () => {
     <>
     <div className="home-container">
       <Navbar />
-      <Header button={true} title="Main Page Statement" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type."/>
+      <Header button={true} title="It's time to become a Product Manager" description="Don't know what you want to do in the future? Try Product Management"/>
       {/* <div ref={node}></div> */}
       <div className="summary-container">
-        <AnimationOnScroll offset={800} duration={0.7} animateIn="square-animation" animateOnce={true}>
+        <AnimationOnScroll offset={400} duration={0.7} animateIn="square-animation" animateOnce={true}>
           <Summary />
         </AnimationOnScroll>
       </div>
