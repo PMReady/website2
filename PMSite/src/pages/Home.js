@@ -1,11 +1,12 @@
 import React from 'react'
-import { useState } from 'react';
+//import { useState } from 'react';
 import Navbar from '../components/NavBar/Navbar.js';
 import Header from '../components/header/Header';
 import Summary from '../components/summary/Summary.js';
 import "./Home.scss"
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import image from "../assets/testwallpaper.jpg"
+import Footer from '../components/footer/Footer.js';
 
 const Description = () => {
   return(
@@ -20,8 +21,9 @@ const Description = () => {
 const Home = () => {
 
   // toggle animations
-  const [animationToggle, setAnimationToggle] = useState(false);
+  //const [animationToggle, setAnimationToggle] = useState(false);
 
+  const animationToggle = false;
   return (
     <>
     <div className="home-container">
@@ -65,6 +67,8 @@ const Home = () => {
           </div>
         </div>
       </AnimationOnScroll>
+
+      <Footer />
     </div>
     </>
     
