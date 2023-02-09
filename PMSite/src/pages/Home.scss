@@ -5,4 +5,59 @@
     .visible {
     display: flex;
     }
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.program-container {
+
+    h1 {
+        margin-top: 5rem;
+        display: absolute;
+        left: 50%;
+        right: auto;
+        text-align: center;
+
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: clamp(40px, 2.5vw, 80px);
+        line-height: 60px;
+    }
+    .program-container_content {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        
+
+        li {
+            padding: 20px;
+            list-style-type: none;
+            margin: 2rem;
+        }
+        p {
+            text-align: center;
+        }
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .program-container {
+        .program-container_content {
+            flex-direction: column;
+
+            li {
+                margin: 0rem;
+            }
+        }
+    }
+    
 }

@@ -15,7 +15,8 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    width: (10%, 40%, 100%px)
+    width: clamp(10%, 50%, 100%px);
+    padding-left: clamp(0px, 30px, 40px);
 
 }
 

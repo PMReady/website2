@@ -7,7 +7,7 @@ const Summary = () => {
     return (
         
         
-        <div className="pm__summary square-animation" id="summary" >
+        <div className="pm__summary" id="summary" >
             <div className="pm__summary-heading">
                 <h1 className="styled-text">
                     You are at the right place if this sounds like you...
