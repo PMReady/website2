@@ -5,7 +5,7 @@ import Header from '../components/header/Header';
 import Summary from '../components/summary/Summary.js';
 import "./Home.scss"
 import { AnimationOnScroll } from 'react-animation-on-scroll'
-import logo from "../assets/pmready-logo.png";
+import logo from "../assets/Home1.png";
 import image1 from "../assets/Program1.jpg"
 import image2 from "../assets/Program2.jpg"
 import image3 from "../assets/Program3.jpg"
@@ -32,7 +32,7 @@ const Home = () => {
     <>
     <div className="home-container">
       <Navbar />
-      <Header image={logo} button={true} title="It's time to become a Product Manager" description={<Description/>}/>
+      <Header image={logo} button={true} title="It's time to become a Product Manager!" description={<Description/>}/>
       <div className="summary-container">
         { animationToggle ? 
           <AnimationOnScroll offset={600} duration={0.7} animateIn="square-animation" animateOnce={true}>
@@ -51,21 +51,22 @@ const Home = () => {
             <ul>
             <li>
               <img src={image1} alt="plant" />
-              <p>Label 1</p>
+              <p>Phase 1: Research</p>
             </li>
             <li>
-              <img src={image2} alt="plant" />
-              <p>Label 1</p>
+              <img src={image3} alt="plant" />
+              <p>Phase 3: Prototype</p>
             </li>
             </ul>
             <ul>
             <li>
-              <img src={image3} alt="plant" />
-              <p>Label 1</p>
+              <img src={image2} alt="plant" />
+              <p>Phase 2: Planning</p>
             </li>
+            
             <li>
               <img src={image4} alt="plant" />
-              <p>Label 1</p>
+              <p>Phase 4: Pitching</p>
             </li>
             </ul>
           </div>

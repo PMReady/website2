@@ -1,0 +1,133 @@
+.section_margin {
+    margin: clamp(0rem, 1rem, 2rem);
+}
+.pm__header {
+    display: flex;
+    background-color: white;
+    padding: 2% 5%;
+    flex-direction: row;
+    
+    /* min-height: 100vh; */
+    .pm__header-content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        padding-left: clamp(0px, 30px, 40px);
+    
+    }
+    
+    .pm__header-content h1 {
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 75px;
+    
+        max-width: clamp(500px, 30%, 100%);
+        line-height: 70px;
+        letter-spacing: -0.02em;
+        text-shadow: 2px 3px 5px gray ;
+    
+    }
+    
+    .pm__header-content p {
+        margin: 3rem 0rem;
+        font-family: var(--font-family);
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 25px;
+        margin-right: 0;
+    
+        width: 100%;
+        animation-delay: 0.05s;
+    }
+    
+    
+    .pm__header-content button {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 15px;
+        background-color: #ffffff;
+        color: var(--color-accent-red);
+        border: none;
+        padding: 10px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 25px;
+        outline: 2px solid var(--color-accent-red);
+        animation-delay: 0.08s;
+    
+   
+    }
+    
+    .pm__header-content button:hover {
+        background-color: var(--color-accent-red);
+        color: #D9D9D9;
+    }
+    
+    .pm__header-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pm__header-image img {
+        max-width: 90%;
+        height: auto;
+        animation-delay: 0.08s;
+        margin-bottom: 1rem;
+    }
+    
+   
+}
+
+//TODO: Port media queries into sass 
+
+@media screen and (max-width: 650px) {
+    /* .pm__header h1 {
+        margin-right: 0;
+        font-size: 48px;
+        line-height: 60px;
+    } */
+    .pm__header-content p {
+        font-size: 18px;
+        line-height: 24px;
+        margin-right: 0;
+    }
+    .section_margin {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .pm__header-content {
+        width: 100%;
+        h1 {
+            font-size: 40px;
+            line-height: 60px;;
+        }
+        p {
+            font-size: 16px;
+            margin: 1.5rem 0rem;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1050px) {
+    .pm__header {
+        flex-direction: column;
+    }
+    .pm__header-content {
+        margin: 0 0 3rem;
+        
+    }
+
+}

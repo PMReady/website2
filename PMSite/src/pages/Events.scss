@@ -11,7 +11,10 @@
         align-items: flex-start;
         flex-direction: column;
         max-width: 60%;
-
+        
+        @media screen and (max-width: 650px) {
+            max-width: 90%;
+        }
     }
    .invisible {
     display: none;

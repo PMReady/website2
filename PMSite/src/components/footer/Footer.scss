@@ -38,14 +38,15 @@
     .pm__footer-links {
         font-family: var(--font-family);
         font-style: normal;
-        font-weight: 400;
         line-height: 30px;
         h1 {
             color: rgba(255, 255, 255, 0.7);
             margin-bottom: 0.2rem;
             font-size: 20px;
+            font-weight: 400;
         }
         p {
+            font-size: 20px;
             color: white;
         }
     }
