@@ -1,12 +1,12 @@
 import React from 'react'
 import "./Header.css"
-import image from "../../assets/sprout.png"
+//import image from "../../assets/sprout.png"
 import { Link } from 'react-router-dom'
 
 // Header for the main home page
 
 
-const Header = ({ title, description, button=false }) => {
+const Header = ({ title, description, button=false, image }) => {
   return (
     <div className="pm__header" id="home">
       <div className="pm__header-image slide-right">

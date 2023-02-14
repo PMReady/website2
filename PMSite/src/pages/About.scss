@@ -1,5 +1,40 @@
 .about-container {
-    .pm__header-image {
-        display: none;
+    // adjusting header
+    .pm__header {
+        display: flex;
+        background-color: white;
+        padding: 2% 1%;
+        
+        /* min-height: 100vh; */
     }
+    // .pm__header-image {
+    //     display: none;
+    // }
+    .pm__header-content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        max-width: 60%;
+
+        h1 {
+
+        }
+    }
+    .invisible {
+    display: none;
+    }
+    .visible {
+    display: flex;
+    }
+    
+    
+    
 }
+
+.pm__header-image {
+    display: none;
+}
+
+

@@ -25,7 +25,7 @@ img {
         font-family: var(--font-family);
         font-style: normal;
         font-weight: 400;
-        font-size: clamp(40px, 2.5vw, 80px);
+        font-size: clamp(40px, 2vw, 80px);
         line-height: 60px;
     }
     .program-container_content {
@@ -36,6 +36,7 @@ img {
         justify-content: space-around;
         flex-direction: row;
         
+        
 
         li {
             padding: 20px;
@@ -43,7 +44,12 @@ img {
             margin: 2rem;
         }
         p {
+            font-family: var(--font-family);
             text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 34px;
         }
     }
 
