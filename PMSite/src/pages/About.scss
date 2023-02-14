@@ -1,5 +1,4 @@
 .pm__about-container {
-    
     .invisible {
     display: none;
     }
@@ -27,8 +26,9 @@
             padding-bottom: 2rem;
 
             font-weight: 400;
-            font-size: 20px;
+            font-size: clamp(1rem, 2.5vw, 1.5rem); 
             line-height: 30px;
+     
         }
     }
 
@@ -41,7 +41,7 @@
             font-weight: 400;
             font-size: 30px;
             line-height: 45px;
-            text-align: center;
+            
         }
         .about-page_our-team_cards {
             display: flex;
@@ -50,6 +50,9 @@
             justify-content: center;
         }
         
+        a:hover {
+            color: var(--color-accent-red);
+        }
     }
     
     

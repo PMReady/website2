@@ -20,7 +20,7 @@ const Header = ({ title, description, button=false, image }) => {
 
         { button ? 
           <Link to="/about">
-            <button className='slide-right'>About Us</button>
+            <button className='about-button slide-right'>About Us</button>
           </Link> 
           : 
           <div></div>

@@ -1,0 +1,76 @@
+.contact-page_newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 8rem 15rem 8rem;
+    text-align: center;
+    font-family: var(--font-family);
+    h1 {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 70px;
+    }
+    h2 {
+        width: 80%;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 35px;
+    }
+    h1,h2 {
+        margin: 2rem 0;
+    }
+    .newsletter-form {
+        flex: 1;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        input {
+            width: 50%;
+            border: 0;
+            background: #FFFFFF;
+            border: 1px solid var(--color-blue-dark);
+            height: 50px;
+            font-size: 16px;
+            color: black;
+            padding: 0 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        button {
+            font-family: var(--font-family);
+            color: black;
+            //position: absolute;
+            background: var(--color-accent-green);
+            letter-spacing: 1px;
+            text-decoration: none;
+            width: 8rem;
+            height: 50px;
+            margin-left:2rem;
+            padding: 8px 10px;
+            border: 2px solid var(--color-accent-green);
+            border-radius: 12px;
+            transition: 0.3s;
+            //align-content: right;
+            &:hover {
+                background: transparent;
+                color: #333;
+                cursor:pointer;
+            }
+        }
+        
+    }
+    @media screen and (max-width: 650px) {
+        padding: 1rem 1rem;
+        .newsletter-form {
+            input {
+                width: 100%;
+            }
+            h2 {
+                width: 100%;
+            }
+        }
+        
+    }
+
+}

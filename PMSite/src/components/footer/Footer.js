@@ -1,12 +1,15 @@
 import React from 'react'
 import "./Footer.scss"
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
+
+/* eslint-disable jsx-a11y/anchor-is-valid */
 
 const Footer = () => {
   return (
     <div className="pm__footer-container">
       <div className="pm__footer-header">
-        <h1>PMReady</h1>
+        <h1><HashLink smooth to="/#home">PMReady</HashLink></h1>
         <p>Couldn't find what you were looking for? Contact us through email to get in touch.</p>
       </div>
       <div className="pm__footer-links">
@@ -17,9 +20,14 @@ const Footer = () => {
       </div>
       <div className="pm__footer-links">
         <h1>Learn More</h1>
-        <p><Link to="/about">Our Mission</Link></p>
-        <p><Link to="/about">Team</Link></p>
-        <p><Link to="/events">Events</Link></p>
+        <p><HashLink smooth to="/about#our-mission"> 
+            Our Mission
+          </HashLink></p>
+       
+        <p><HashLink smooth to="/about#team-page"> 
+            Our Team
+          </HashLink></p>
+        <p><HashLink smooth to="/events#events">Events</HashLink></p>
       </div>
       <div className="pm__footer-links">
         <h1>Get Involved</h1>

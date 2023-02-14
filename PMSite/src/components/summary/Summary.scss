@@ -6,7 +6,8 @@
     flex-direction: column;
     padding: 2rem;
     background: #B7D7F4;
-    
+    animation-delay: 0.5s;
+    animation-duration: 0.8s;
 }
 
 .pm__summary-feature {
@@ -58,6 +59,8 @@
     font-size: 20px;
     line-height: 30px;
 
+    animation-delay: 1s;
+    animation-duration: 0.8s;
     .pm__summary-list {
         margin-left: clamp(0%, 10%, 80%);
         margin-right: clamp(0%, 10%, 80%);

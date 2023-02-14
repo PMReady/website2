@@ -62,13 +62,15 @@
         border-radius: 25px;
         outline: 2px solid var(--color-accent-red);
         animation-delay: 0.08s;
-    
-   
-    }
-    
-    .pm__header-content button:hover {
-        background-color: var(--color-accent-red);
-        color: #D9D9D9;
+        transition: 0.5s;
+        // -webkit-transition: ease-out 0.4s;
+        // -moz-transition: ease-out 0.4s;
+        // transition: ease-out 0.4s;
+       
+        &:hover {
+            background-color: var(--color-accent-red);
+            color: #ffffff;
+        }
     }
     
     .pm__header-image {

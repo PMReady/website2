@@ -7,13 +7,13 @@ const Summary = () => {
     return (
         
         
-        <div className="pm__summary" id="summary" >
+        <div className="pm__summary fade-in" id="summary" >
             <div className="pm__summary-heading">
                 <h1 className="styled-text">
                     You are at the right place if this sounds like you...
                 </h1>
             </div>
-            <div className="pm__summary-container">
+            <div className="pm__summary-container slide-right">
                 <div className="pm__summary-list">
                 <ul>
                     <li>You are an organized person, and love connecting with others.</li>
