@@ -12,9 +12,10 @@ const Contact = () => {
           <h1>Subscribe to our Newsletter</h1>
           <h2>Join our mailing list to be up to date with the latest news and updates from us.</h2>
           
-          <form className="newsletter-form">
-            <input type="email" placeholder="Email*" />
-            <button>Subscribe</button>
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSehGxF8NR1nl4X58WX6CrA5FEPnIyx5Rd4bLAQkER9jeWYZ1w/viewform" className="newsletter-form">
+            {/* <input type="email" placeholder="Email*" /> */}
+              <button type="submit">Subscribe</button>
+
           </form>
           
         </div>

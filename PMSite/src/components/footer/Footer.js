@@ -14,8 +14,8 @@ const Footer = () => {
       </div>
       <div className="pm__footer-links">
         <h1>Contact Us</h1>
-        <p><a>LinkedIn</a></p>
-        <p><a>Instagram</a></p>
+        <p><a href="https://www.linkedin.com/company/pmready/">LinkedIn</a></p>
+        <p><a href="https://www.instagram.com/bupmready/">Instagram</a></p>
         <p><Link className="a" to="/contact">Contact Form</Link></p>
       </div>
       <div className="pm__footer-links">
@@ -31,7 +31,7 @@ const Footer = () => {
       </div>
       <div className="pm__footer-links">
         <h1>Get Involved</h1>
-        <p><a>Mailing List Signup</a></p>
+        <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSehGxF8NR1nl4X58WX6CrA5FEPnIyx5Rd4bLAQkER9jeWYZ1w/viewform">Mailing List Signup</a></p>
       </div>
     </div>
   )
