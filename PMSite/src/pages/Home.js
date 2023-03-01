@@ -54,16 +54,16 @@ const Home = () => {
               <p>Phase 1: Research</p>
             </li>
             <li>
-              <img src={image3} alt="plant" />
-              <p>Phase 3: Prototype</p>
-            </li>
-            </ul>
-            <ul>
-            <li>
               <img src={image2} alt="plant" />
               <p>Phase 2: Planning</p>
             </li>
+            </ul>
             
+            <ul>
+            <li>
+              <img src={image3} alt="plant" />
+              <p>Phase 3: Prototype</p>
+            </li>
             <li>
               <img src={image4} alt="plant" />
               <p>Phase 4: Pitching</p>

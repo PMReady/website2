@@ -32,11 +32,15 @@
         margin-bottom: 5rem;
         margin-left: 2rem;
         margin-right: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: row;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // justify-content: space-around;
+        // flex-direction: row;
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
         li {
             padding: 30px;
             list-style-type: none;
@@ -57,7 +61,9 @@
 @media screen and (max-width: 850px) {
     .program-container {
         .program-container_content {
-            flex-direction: column;
+            ul {
+                grid-template-columns: 1fr;
+            }
 
             li {
                 padding: 20px 0;
