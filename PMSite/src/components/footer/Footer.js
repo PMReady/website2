@@ -2,14 +2,16 @@ import React from 'react'
 import "./Footer.scss"
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
+import baseURI from '../../baseurl'
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 const Footer = () => {
+  const URI = `/${baseURI}`;
   return (
     <div className="pm__footer-container">
       <div className="pm__footer-header">
-        <h1><HashLink smooth to="/#home">PMReady</HashLink></h1>
+        <h1><HashLink smooth to={URI+"/#home"}>PMReady</HashLink></h1>
         <p>Couldn't find what you were looking for? Contact us through email to get in touch.</p>
       </div>
       <div className="pm__footer-links">
@@ -20,14 +22,14 @@ const Footer = () => {
       </div>
       <div className="pm__footer-links">
         <h1>Learn More</h1>
-        <p><HashLink smooth to="/about#our-mission"> 
+        <p><HashLink smooth to={URI+"/about#our-mission"}> 
             Our Mission
           </HashLink></p>
        
-        <p><HashLink smooth to="/about#team-page"> 
+        <p><HashLink smooth to={URI+"/about#team-page"}> 
             Our Team
           </HashLink></p>
-        <p><HashLink smooth to="/events#events">Events</HashLink></p>
+        <p><HashLink smooth to={URI+"/events#events"}>Events</HashLink></p>
       </div>
       <div className="pm__footer-links">
         <h1>Get Involved</h1>

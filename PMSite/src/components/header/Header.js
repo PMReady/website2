@@ -2,11 +2,13 @@ import React from 'react'
 import "./Header.scss"
 // import image from "../../assets/Home1.png"
 import { Link } from 'react-router-dom'
+import baseURI from '../../baseurl'
 
 // Header for the main home page
 
 
 const Header = ({ title, description, button=false, image }) => {
+  const URI = `/${baseURI}`;
   return (
     <div className="pm__header" id="home">
       <div className="pm__header-image slide-right">
@@ -19,7 +21,7 @@ const Header = ({ title, description, button=false, image }) => {
         </div>
 
         { button ? 
-          <Link to="/about">
+          <Link to={URI+"/about"}>
             <button className='about-button slide-right'>About Us</button>
           </Link> 
           : 

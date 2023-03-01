@@ -3,18 +3,20 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import { Link, NavLink } from 'react-router-dom';
 import "./Navbar.scss"
 import Logo from "../../assets/pmready-logo.png"
+import baseURI from '../../baseurl';
 
 // BEM Naming used
 
 // TODO: Eventually replace a tags with actual <Link> using react router dom
-
+const URI = `/${baseURI}`;
 const Links = () => {
+  
   return(
     <>
-      <p><NavLink activeclassname="active" to="/">Home</NavLink></p>
-      <p><NavLink activeclassname="active" to="/about">About</NavLink></p>
-      <p><NavLink activeclassname="active" to="/events">Events</NavLink></p>
-      <p><NavLink activeclassname="active" to="/contact">Contact Us</NavLink></p>
+      <p><NavLink activeclassname="active" to={URI} end>Home</NavLink></p>
+      <p><NavLink activeclassname="active" to={URI + "/about"}>About</NavLink></p>
+      <p><NavLink activeclassname="active" to={URI+ "/events"}>Events</NavLink></p>
+      <p><NavLink activeclassname="active" to={URI + "/contact"}>Contact Us</NavLink></p>
     </>
   )
 }
@@ -27,7 +29,7 @@ const Navbar = () => {
     <div className="pm__navbar">
       <div className="pm__navbar-links">
         <div className="pm__navbar-links_logo">
-          <Link to="/">
+          <Link to={URI}>
             <img src={Logo} alt="logo" />
           </Link>
         </div>
