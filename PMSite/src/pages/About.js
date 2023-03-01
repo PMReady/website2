@@ -14,7 +14,7 @@ const About = () => {
   return (
     <div className="pm__about-container">
       <Navbar />
-      <HeaderV2 image={image} title="Why Product Management?" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."/>
+      <HeaderV2 image={image} title="Why Product Management?" description="Product management is the reason an organization exists: to deliver great products to customers and hopefully make tons of cash. The product manager sets the tone for a product, understands the customer’s pain points, leads a team, takes various forms of input, and ultimately makes the product-related decisions. With this role, you will find yourself not only handling many of the engineering aspects of a product, but also interacting with users every day to ultimately create a furnished result."/>
       <div id="our-mission" className="about-page_mission-statement fade-in">
         <h1 className='slide-right'>Our Mission</h1>
         <p className='slide-right'>
@@ -31,7 +31,7 @@ const About = () => {
           <TeamCard className="about-card _3" name="Abigail Gualda" role="Vice President" link="https://www.linkedin.com/in/abigail-gualda/" image={TeamImage.Abby} />
           <TeamCard className="about-card _4" name="Manya Bajaj" role="Secretary" link="https://www.linkedin.com/in/manya-bajaj-a41566252" image={TeamImage.Manya} />
           <TeamCard className="about-card _5" name="Aidan Ruvins" role="Treasurer" link="https://www.linkedin.com/in/aidan-ruvins" image={TeamImage.Aidan} />
-          <TeamCard className="about-card _6" name="Cindy Fremont" role="Event Coordinator" link="http://linkedin.com/in/cindy-frempong-7567631a3" image={TeamImage.Cindy} />
+          <TeamCard className="about-card _6" name="Cindy Frempong" role="Event Coordinator" link="http://linkedin.com/in/cindy-frempong-7567631a3" image={TeamImage.Cindy} />
           <TeamCard className="about-card _7" name="Owen Mariani" role="Event Coordinator" link="http://linkedin.com/in/owen-mariani" image={TeamImage.Owen} />
           <TeamCard className="about-card _8" name="Brianna Li" role="Social Media" link="https://www.linkedin.com/in/lbrianna" image={TeamImage.Brianna} />
           <TeamCard className="about-card _9" name="Derek Xu" role="Digital Media" link="https://www.linkedin.com/in/xuderek04/" image={TeamImage.Derek} />
