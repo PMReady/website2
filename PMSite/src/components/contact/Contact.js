@@ -27,10 +27,10 @@ const Contact = () => {
   return (
     <div className="pm__contact">
       <div className="contact-form_content">
-        <h1>CONTACT US</h1>
-        <p>Need to get in touch with us? Either fill out the form with your inquiry or find the club email here.</p>
+        <h1 className='scale-up-center'>CONTACT US</h1>
+        <p className='scale-up-center'>Need to get in touch with us? Either fill out the form with your inquiry or find the club email here.</p>
       </div>
-      <div className='contact-form'>
+      <div className='contact-form scale-up-center'>
         <form ref={refForm} onSubmit={sendEmail}>
             <ul>
                 <li className='half'>
