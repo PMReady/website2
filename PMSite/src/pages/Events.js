@@ -23,7 +23,7 @@ const Events = () => {
           <div className="events-page_header-content slide-right">
             <h1>Upcoming Events!</h1>
             <p>Welcome to PMReady! We have event every few weeks. Look at the calendar down below, and mark your calendar! Every one is welcome to attend our events!</p>
-            <button>Subscribe to our Mailing List</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSehGxF8NR1nl4X58WX6CrA5FEPnIyx5Rd4bLAQkER9jeWYZ1w/viewform"><button>Subscribe to our Mailing List</button></a>
           </div>
           <img src={EventImage} alt="events"></img>
         </div>
