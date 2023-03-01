@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/website2/static/css/main.373c877a.css",
+    "main.js": "/website2/static/js/main.df86d2a7.js",
+    "static/media/Brianna-Li.png": "/website2/static/media/Brianna-Li.1da8bf8230feaae27b24.png",
+    "static/media/Cindy-Frempong.jpeg": "/website2/static/media/Cindy-Frempong.ee607e67494e89f830ad.jpeg",
+    "static/media/Home1.png": "/website2/static/media/Home1.a4b89ea0bca012a2291e.png",
+    "static/media/Program4.jpg": "/website2/static/media/Program4.08828f7ed46552fa21d1.jpg",
+    "static/media/events-image.jpg": "/website2/static/media/events-image.5bf69774e9f36d0bfdef.jpg",
+    "static/media/Program2.jpg": "/website2/static/media/Program2.c1805ee94de5a32fdc99.jpg",
+    "static/media/Abby-Gualda.jpg": "/website2/static/media/Abby-Gualda.4aaa42412a1eacee2d2b.jpg",
+    "static/media/Program3.jpg": "/website2/static/media/Program3.4b24c77355205375bb6f.jpg",
+    "static/media/about-image.jpg": "/website2/static/media/about-image.4ab7f986ff3bb3ac1bf3.jpg",
+    "static/media/Program1.jpg": "/website2/static/media/Program1.982fcf95b04c65df58c1.jpg",
+    "static/media/Owen-Mariani.jpg": "/website2/static/media/Owen-Mariani.f058481cbdc915aa91db.jpg",
+    "static/media/Macy-So.jpg": "/website2/static/media/Macy-So.67116395baebb0ed51a7.jpg",
+    "static/media/pmready-logo.png": "/website2/static/media/pmready-logo.d20b78260ea5a1e1666c.png",
+    "static/media/Manya-Bajaj.jpg": "/website2/static/media/Manya-Bajaj.badd14aef1e96ffcfc6c.jpg",
+    "static/media/Derek-Xu.jpg": "/website2/static/media/Derek-Xu.587346392dad3e04de8e.jpg",
+    "static/media/Marielle-Belomme.jpg": "/website2/static/media/Marielle-Belomme.a0ae8aae7ddbb604f5af.jpg",
+    "static/media/Aidan-Ruvins.jpg": "/website2/static/media/Aidan-Ruvins.76b23b7d2d6f9c883ce6.jpg",
+    "index.html": "/website2/index.html",
+    "main.373c877a.css.map": "/website2/static/css/main.373c877a.css.map",
+    "main.df86d2a7.js.map": "/website2/static/js/main.df86d2a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.373c877a.css",
+    "static/js/main.df86d2a7.js"
+  ]
+}
