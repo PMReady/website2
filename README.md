@@ -5,6 +5,8 @@
 ## Introduction 
 PMReady is a newly found club helps students navigate into the product management world.
 
+[Live Site](https://pmready.github.io/website2/)
+
 ## Contributors
 Developers:	Derek Xu
 
